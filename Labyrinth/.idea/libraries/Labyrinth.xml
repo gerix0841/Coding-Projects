@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Labyrinth">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/dist/Labyrinth.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
