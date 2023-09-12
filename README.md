@@ -1,2 +1,2 @@
-# Java-Projects
- ELTE Java Projects
+# Coding-Projects
+ My Coding Projects

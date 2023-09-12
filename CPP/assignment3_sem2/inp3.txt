@@ -1,0 +1,6 @@
+3
+Falánk p 7
+Sudár p 5
+Köpcös b 4
+Nyúlánk p 3
+10

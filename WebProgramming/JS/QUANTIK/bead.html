@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bead.css" />
+    <title>QUANTIK</title>
+</head>
+<body>
+    <div id="startsite">
+        <h1>QUANTIK</h1>
+        <input type="text" id="player1" value="1. játékos"><br>
+        <input type="text" id="player2" value="2. játékos"><br>
+        <button id="startbutton">Start</button>
+        <button id="rulesbutton">Rules</button>
+
+        <ul id="vegeredmenyek">Végeredmények:
+        </ul>
+    </div>
+
+    <div id="rulesite" hidden>
+        <h1>QUANTIK Rules</h1>
+        <p>A játék egy 4x4-es táblán játszódik, ami 4 egyenlő, 2x2-es részre van bontva</p>
+        <p>Mind a két játékosnak minden alakzatból 2-2 bábuja van, így összesen 8 alakzat található meg egy színből</p>
+        <p>A játék célja az, hogy elsőként helyezzék le a játékosok a negyedik, többitől különböző formát egy sorba, oszlopba, vagy négyzet alakú területre (színtől függetlenül)</p>
+        <p> Ha egy cellára lehelyeztünk egy alakzatot, akkor annak sorába, oszlopába, vagy négyzet alakú területére nem tudja már egyik játékos sem még egyszer ugyanazt az alakzatot letenni</p>
+        <button id="backbutton">Back</button>
+    </div>
+
+    <div id="gamesite" hidden>
+        <h1>PLAY</h1>
+        <table id="gametable"></table>
+        <p id="currentplayer"></p><br>
+        <p id="activeShapeP"></p><br>
+        <button id="startsiteButton">Főoldal</button>
+        <div id="playerShapes">
+            <div id="player1ShapeBox">
+                <div id="player1Shapes">
+                    <img src="res/redCircle.png" id="redCButton"> <img src="res/redSquare.png" id="redSButton"> <img src="res/redTri.png" id="redTButton"> <img src="res/redX.png" id="redXButton">
+                </div>
+                <div id="player1Nums">
+                    <span id="redCSpan">2</span> <span id="redSSpan">2</span> <span id="redTSpan">2</span> <span id="redXSpan">2</span>
+                </div>
+            </div>
+            <div id="player2ShapeBox">
+                <div id="player2Shapes">
+                    <img src="res/greenCircle.png" id="greenCButton"> <img src="res/greenSquare.png" id="greenSButton"> <img src="res/greenTri.png" id="greenTButton"> <img src="res/greenX.png" id="greenXButton">
+                </div>
+                <div id="player2Nums">
+                    <span id="greenCSpan">2</span> <span id="greenSSpan">2</span> <span id="greenTSpan">2</span> <span id="greenXSpan">2</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="bead.js"></script>
+</body>
+</html>
